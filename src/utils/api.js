@@ -1,4 +1,4 @@
-const BASE_URL = 'http://localhost:5000/api'
+const BASE_URL = 'https://umkm-backend-production-aa29.up.railway.app/api'
 function getToken() { return localStorage.getItem('umkm_token') }
 async function request(endpoint, options = {}) {
   const token = getToken()
