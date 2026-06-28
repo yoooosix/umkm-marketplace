@@ -64,16 +64,6 @@ export default function LoginPage() {
                 {loading ? "Memproses..." : <><span>Masuk</span><span className="material-symbols-outlined">login</span></>}
               </button>
             </form>
-            <div className="relative my-6">
-              <div className="absolute inset-0 flex items-center"><div className="w-full border-t border-gray-200" /></div>
-              <div className="relative flex justify-center"><span className="bg-white px-4 text-xs text-gray-400">Coba akun demo</span></div>
-            </div>
-            <div className="grid grid-cols-3 gap-2">
-              {["customer","seller","admin"].map(r => (
-                <button key={r} type="button" onClick={() => quickFill(r)}
-                  className="py-2 border border-gray-200 rounded-lg text-xs font-medium hover:bg-gray-50 transition-colors capitalize">{r}</button>
-              ))}
-            </div>
           </div>
           <p className="text-center text-sm text-on-surface-variant mt-4">
             Belum punya akun?{" "}
